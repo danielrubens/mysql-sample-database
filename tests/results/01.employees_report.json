@@ -1,0 +1,62 @@
+[
+  {
+    "employeeNumber": 1165,
+    "lastName": "Jennings",
+    "firstName": "Leslie",
+    "extension": "x3291",
+    "email": "ljennings@classicmodelcars.com",
+    "officeCode": "1",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  },
+  {
+    "employeeNumber": 1166,
+    "lastName": "Thompson",
+    "firstName": "Leslie",
+    "extension": "x4065",
+    "email": "lthompson@classicmodelcars.com",
+    "officeCode": "1",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  },
+  {
+    "employeeNumber": 1188,
+    "lastName": "Firrelli",
+    "firstName": "Julie",
+    "extension": "x2173",
+    "email": "jfirrelli@classicmodelcars.com",
+    "officeCode": "2",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  },
+  {
+    "employeeNumber": 1216,
+    "lastName": "Patterson",
+    "firstName": "Steve",
+    "extension": "x4334",
+    "email": "spatterson@classicmodelcars.com",
+    "officeCode": "2",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  },
+  {
+    "employeeNumber": 1286,
+    "lastName": "Tseng",
+    "firstName": "Foon Yue",
+    "extension": "x2248",
+    "email": "ftseng@classicmodelcars.com",
+    "officeCode": "3",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  },
+  {
+    "employeeNumber": 1323,
+    "lastName": "Vanauf",
+    "firstName": "George",
+    "extension": "x4102",
+    "email": "gvanauf@classicmodelcars.com",
+    "officeCode": "3",
+    "reportsTo": 1143,
+    "jobTitle": "Sales Rep"
+  }
+]
