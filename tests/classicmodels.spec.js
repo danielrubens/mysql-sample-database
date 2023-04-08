@@ -31,5 +31,11 @@ describe('MySQL Sample Database Tests', () => {
         const result = require('./results/02.customers_orders_shipped.json')
         expect(await sequelize.query(query, { type: 'SELECT'})).toEqual(result)
     })
+
+    it('List only the products with orders where products have been ordered by the price of 100 to 150', async () => {
+        const query = readFileSync('03.products_orders_price.sql', 'utf-8').trim();
+        const result = require('./results/03.products_orders_price.json')
+        expect(await sequelize.query(query, { type: 'SELECT'})).toEqual(result)
+    })
     
 })
