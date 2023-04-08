@@ -19,11 +19,17 @@ describe('MySQL Sample Database Tests', () => {
         await sequelize.query('DROP DATABASE classicmodels', { type: 'RAW'});
         sequelize.close()
     })
+
     it('Return all Employees who report to Bow Antony, Sales Manager', async () => {
         const query = readFileSync('01.employees_report.sql', 'utf-8').trim();
-        const result = require('./results/employees_report')
-        console.log(result)
-
+        const result = require('./results/01.employees_report.json')
         expect(await sequelize.query(query, { type: 'SELECT'})).toEqual(result)
     })
+    
+    it('Find all Customers and theirs orders that were shipped in August 2003', async () => {
+        const query = readFileSync('02.customers_orders_shipped.sql', 'utf-8').trim();
+        const result = require('./results/02.customers_orders_shipped.json')
+        expect(await sequelize.query(query, { type: 'SELECT'})).toEqual(result)
+    })
+    
 })
