@@ -19,7 +19,7 @@ services:
       HOSTNAME: db
 
   db:
-    container_name: all_for_one_db
+    container_name: db_container
     image: mysql:5.7
     restart: always
     ports:

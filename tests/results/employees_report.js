@@ -1,4 +1,4 @@
-[
+const result = [
   {
     "employeeNumber": 1165,
     "lastName": "Jennings",
@@ -60,3 +60,5 @@
     "jobTitle": "Sales Rep"
   }
 ]
+
+module.exports = result
