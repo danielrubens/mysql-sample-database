@@ -1,0 +1,23 @@
+{
+  "name": "mysql-sample-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --runInBand --verbose --forceExit",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "mysql-import": "^4.0.24"
+  },
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.2.0"
+  }
+}

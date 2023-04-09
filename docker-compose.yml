@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  node:
+    image: node:16
+    container_name: classicmodels
+    tty: true
+    stdin_open: true
+    command: bash
+    restart: always
+    working_dir: /app
+    volumes:
+      - ./:/app
+    depends_on:
+      - db
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      HOSTNAME: db
+
+  db:
+    container_name: db_container
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3307:3307
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+
+networks:
+  default:
+    name: classicmodels_net
