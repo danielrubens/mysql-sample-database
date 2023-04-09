@@ -13,9 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "acorn": ">=5.7.4",
     "jest": "^24.9.0",
-    "minimist": ">=1.2.2",
     "mysql-import": "^4.0.24"
   },
   "dependencies": {
